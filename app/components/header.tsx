@@ -3,20 +3,20 @@ import Link from "next/link";
 export default function Header() {
   return (
     <>
-      <header className="p-">
+      <header className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-sm">
         <nav>
-          <ul className=" flex text-white gap-5 justify-center p-5 border-b-[1px] border-b-white text-xs">
+          <ul className="flex text-white gap-5 justify-center p-5 border-b border-white text-xs">
             <li>
-              <Link href="/">inicio</Link>
+              <Link href="/#inicio">inicio</Link>
             </li>
             <li>
-              <Link href="/">portifólio</Link>
+              <Link href="/#portifolio">portifólio</Link>
             </li>
             <li>
-              <Link href="/">sobre</Link>
+              <Link href="/#sobre">sobre</Link>
             </li>
             <li>
-              <Link href="/">contato</Link>
+              <Link href="/#contato">contato</Link>
             </li>
           </ul>
         </nav>
