@@ -2,6 +2,8 @@ import Header from "./components/header";
 import Image from "next/image";
 import CircleBackground from "@/public/circle-background.svg";
 import LuisIlustration from "@/public/luis-ilustration.svg";
+import WhatsappIcon from "@/public/icons/whatsap.svg";
+import Button from "./components/button";
 
 export default function Home() {
   return (
@@ -25,6 +27,16 @@ export default function Home() {
               conversões e destaque sua marca com uma
               <br /> identidade visual poderosa
             </p>
+
+            <Button active className="mt-20">
+              Chame
+              <Image
+                src={WhatsappIcon}
+                width={36}
+                height={36}
+                alt="Whatsapp icon"
+              ></Image>
+            </Button>
           </div>
 
           <div className="relative w-1/2 flex items-center justify-center">
