@@ -1,4 +1,4 @@
-import { Lobster_Two, Inter } from "next/font/google";
+import { IBM_Plex_Mono, Inter } from "next/font/google";
 
 export const inter = Inter({
   variable: "--font-inter",
@@ -7,8 +7,8 @@ export const inter = Inter({
   display: "swap",
 });
 
-export const lobsterTwo = Lobster_Two({
-  variable: "--font-lobster",
+export const IBM = IBM_Plex_Mono({
+  variable: "--font-ibm",
   weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
