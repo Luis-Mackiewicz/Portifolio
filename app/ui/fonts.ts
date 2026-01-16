@@ -1,4 +1,4 @@
-import { Lobster_Two, Cinzel, Inter } from "next/font/google";
+import { Lobster_Two, Inter } from "next/font/google";
 
 export const inter = Inter({
   variable: "--font-inter",
