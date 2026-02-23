@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
-import { inter } from "@/app/ui/fonts";
+import { inter, barbra } from "@/app/ui/fonts";
 export const metadata: Metadata = {
   title: "Luis Mackiewicz | Developer",
   description:
@@ -14,7 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={` ${inter.variable}  antialiased`}>
+    <html
+      lang="pt-BR"
+      className={` ${inter.variable} ${barbra.variable}  antialiased`}
+    >
       <body className="font-inter">{children}</body>
     </html>
   );
