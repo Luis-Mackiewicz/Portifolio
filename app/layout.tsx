@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
-import { lobsterTwo, inter } from "@/app/ui/fonts";
+import { inter } from "@/app/ui/fonts";
 export const metadata: Metadata = {
   title: "Luis Mackiewicz | Developer",
   description:
@@ -14,10 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${lobsterTwo.variable} ${inter.variable}  antialiased`}
-    >
+    <html lang="pt-BR" className={` ${inter.variable}  antialiased`}>
       <body className="font-inter">{children}</body>
     </html>
   );
