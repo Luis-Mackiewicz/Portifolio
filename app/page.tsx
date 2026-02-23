@@ -34,7 +34,7 @@ export default function Home() {
           <source src="/coding-video.mp4" type="video/mp4" />
         </video>
 
-        <div className="absolute flex flex-col items-center  text-center text-white">
+        <div className="absolute flex flex-col gap-4 items-center  text-center text-white">
           <h1 className="text-6xl font-barbra font-bold">
             Olá, eu sou Luis Miguel Mackiewicz
           </h1>
