@@ -2,24 +2,33 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="fixed w-full z-10 bg-black">
-      <div className="flex justify-center border-b-4 pt-2.5 pb-2.5">
-        <p className="font-bold text-[1rem] bg-linear-to-r from-sky-600 to-emerald-300 bg-clip-text text-transparent">
-          Luis Miguel mackiewicz
-        </p>
-      </div>
-      <nav className="border-white border-t-2 border-b-2 pt-2.5 pb-2.5">
-        <ul className="flex justify-around font-bold text-white ">
-          <li className=" hover:opacity-50">
+    <header
+      className="
+        fixed
+        top-0
+        z-50
+        w-full
+        bg-black/60
+        backdrop-blur-md
+        border-b
+        border-white/10
+      "
+    >
+      <nav className="mx-auto max-w-6xl px-6 py-3">
+        <ul className="flex items-center justify-between text-sm font-medium text-white">
+          <li className="opacity-90 hover:opacity-50 transition">
             <Link href="#inicio">início</Link>
           </li>
-          <li className=" hover:opacity-50">
+
+          <li className="opacity-90 hover:opacity-50 transition">
             <Link href="#sobre">sobre</Link>
           </li>
-          <li className=" hover:opacity-50">
+
+          <li className="opacity-90 hover:opacity-50 transition">
             <Link href="#portifolio">portifólio</Link>
           </li>
-          <li className=" hover:opacity-50">
+
+          <li className="opacity-90 hover:opacity-50 transition">
             <Link href="#contato">contato</Link>
           </li>
         </ul>
