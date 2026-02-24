@@ -1,15 +1,27 @@
 import Header from "@/app/components/header";
 import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
+import Button from "./components/button";
 
 export default function Home() {
+  console.log("Hello");
   return (
     <div>
       <Header />
       <div className="h-screen overflow-y-scroll snap-y snap-mandatory ">
         <section
           id="inicio"
-          className="relative flex w-full items-center justify-center bg-black overflow-hidden  h-screen snap-start"
+          className="
+    relative
+    flex
+    w-full
+    h-screen
+    items-center
+    justify-center
+    bg-black
+    overflow-hidden
+    snap-start
+  "
         >
           <video
             autoPlay
@@ -21,26 +33,60 @@ export default function Home() {
             disablePictureInPicture
             disableRemotePlayback
             className="
-            h-[calc(100vh-8rem)]
-            w-[90vw]
-            max-w-none
-            rounded-3xl
-            object-cover
-            pointer-events-none
-            select-none
-            opacity-90
-          "
+      h-[calc(100vh-8rem)]
+      w-[90vw]
+      max-w-none
+      rounded-3xl
+      object-cover
+      pointer-events-none
+      select-none
+      opacity-60
+    "
           >
             <source src="/coding-video.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute flex flex-col gap-4 items-center  text-center text-white">
-            <h1 className="text-6xl font-barbra font-bold">
-              Olá, eu sou Luis Miguel Mackiewicz
-            </h1>
-            <h2 className="text-xl  text-zinc-300">
-              Desenvolvedor de software
-            </h2>
+          <div
+            className="
+      absolute
+      flex
+      flex-col
+      items-center
+      text-center
+      text-white
+      max-w-3xl
+      px-6
+      space-y-8
+    "
+          >
+            <div className="space-y-4">
+              <h1
+                className="
+          text-5xl
+          md:text-6xl
+          font-barbra
+          font-bold
+          leading-tight
+        "
+              >
+                Olá, eu me chamo Luis Miguel Mackiewicz
+              </h1>
+
+              <h2
+                className="
+          text-lg
+          md:text-xl
+          text-zinc-300
+          tracking-wide
+        "
+              >
+                Desenvolvedor de software
+              </h2>
+            </div>
+
+            <div className="pt-4">
+              <Button>contactar</Button>
+            </div>
           </div>
         </section>
 
@@ -96,16 +142,19 @@ export default function Home() {
           id="portifolio"
           className="w-full h-screen flex justify-center items-center bg-black snap-start"
         >
-          <h2 className=" text-8xl text-white font-barbra">Em breve!</h2>
+          <h2 className=" text-8xl text-white font-barbra">
+            Nova sessão em breve!
+          </h2>
         </section>
         <section
           id="contato"
-          className="w-full h-screen flex flex-col items-center bg-linear-to-b from-sky-600 to-emerald-600 snap-start"
+          className="w-full h-screen flex flex-col items-center bg-linear-to-b from-sky-300 to-emerald-950 snap-start"
         >
-          <div className="flex-1 flex items-center justify-center px-6 text-center">
+          <div className="flex-1 flex flex-col gap-10 items-center justify-center px-6 text-center">
             <h2 className="text-white text-6xl font-barbra">
               Vamos transformar sua ideia em realidade!
             </h2>
+            <Button>whatsapp</Button>
           </div>
 
           <footer className="mb-8 text-white text-sm">
