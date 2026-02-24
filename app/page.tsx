@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="h-screen overflow-y-scroll snap-y snap-mandatory ">
+      <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
         <section
           id="inicio"
           className="
@@ -33,6 +33,7 @@ export default function Home() {
             disablePictureInPicture
             disableRemotePlayback
             className="
+            
       h-[calc(100vh-8rem)]
       w-[90vw]
       max-w-none
@@ -85,7 +86,7 @@ export default function Home() {
             </div>
 
             <div className="pt-4">
-              <Button>contactar</Button>
+              <Button>contato</Button>
             </div>
           </div>
         </section>
@@ -148,7 +149,7 @@ export default function Home() {
         </section>
         <section
           id="contato"
-          className="w-full h-screen flex flex-col items-center bg-linear-to-b from-sky-300 to-emerald-950 snap-start"
+          className="w-full h-screen flex flex-col items-center bg-linear-to-t from-slate-950 to-lime-500 snap-start"
         >
           <div className="flex-1 flex flex-col gap-10 items-center justify-center px-6 text-center">
             <h2 className="text-white text-6xl font-barbra">
@@ -157,8 +158,8 @@ export default function Home() {
             <Button>whatsapp</Button>
           </div>
 
-          <footer className="mb-8 text-white text-sm">
-            © 2025 Luis Miguel Mackiewicz. All rights reserved.
+          <footer className="relative z-10 mb-8 text-zinc-500 text-xs tracking-widest uppercase">
+            © 2026 Luis Miguel Mackiewicz. All rights reserved.
           </footer>
         </section>
       </div>
