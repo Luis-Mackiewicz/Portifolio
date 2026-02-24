@@ -2,14 +2,7 @@
 
 @theme inline {
   --font-inter: var(--font-inter);
-  --font-barbra: var(--font-barbra);
-  --color-lando-black: #0b0b0b;
-}
-
-body {
-  background-color: var(--color-lando-black);
-  color: white;
-  -webkit-font-smoothing: antialiased;
+  --font-jet: var(--font-jet);
 }
 
 * {

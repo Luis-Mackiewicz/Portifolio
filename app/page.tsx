@@ -1,10 +1,35 @@
+"use client";
+
 import Header from "@/app/components/header";
 import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
 import Button from "./components/button";
+import { useEffect } from "react";
 
 export default function Home() {
-  console.log("Hello");
+  const consoleText = `
+  ██╗     ██╗   ██╗██╗███████╗    ███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███████╗██╗    ██╗██╗ ██████╗███████╗
+  ██║     ██║   ██║██║██╔════╝    ████╗ ████║██╔══██╗██╔════╝██║ ██╔╝██║██╔════╝██║    ██║██║██╔════╝╚══███╔╝
+  ██║     ██║   ██║██║███████╗    ██╔████╔██║███████║██║     █████╔╝ ██║█████╗  ██║ █╗ ██║██║██║       ███╔╝
+  ██║     ██║   ██║██║╚════██║    ██║╚██╔╝██║██╔══██║██║     ██╔═██╗ ██║██╔══╝  ██║███╗██║██║██║      ███╔╝
+  ███████╗╚██████╔╝██║███████║    ██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██╗██║███████╗╚███╔███╔╝██║╚██████╗███████╗
+  ╚══════╝ ╚═════╝ ╚═╝╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝ ╚═════╝╚══════╝
+  `;
+
+  useEffect(() => {
+    console.log(
+      `%c${consoleText}`,
+      `
+      background: linear-gradient(90deg, #6cb500, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: monospace;
+      font-size: 12px;
+      line-height: 12px;
+    `,
+    );
+  });
+
   return (
     <div>
       <Header />
@@ -63,9 +88,9 @@ export default function Home() {
             <div className="space-y-4">
               <h1
                 className="
-          text-5xl
-          md:text-6xl
-          font-barbra
+          text-4xl
+          md:text-4xl
+          font-jet
           font-bold
           leading-tight
         "
@@ -96,7 +121,7 @@ export default function Home() {
           className="w-full bg-black px-6 py-24 text-white snap-start "
         >
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-barbra text-4xl md:text-5xl mb-12">Sobre</h2>
+            <h2 className="font-jet text-4xl md:text-5xl mb-12">Sobre</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-80 items-center">
               <div className="flex justify-center">
@@ -104,6 +129,7 @@ export default function Home() {
                   src={MyselfImage}
                   alt="Luis Miguel tocando guitarra"
                   width={420}
+                  sizes="(max-width: 768px) 100vw, 420px"
                   className="rounded-3xl object-cover grayscale hover:grayscale-0 transition duration-500"
                 />
               </div>
@@ -143,7 +169,7 @@ export default function Home() {
           id="portifolio"
           className="w-full h-screen flex justify-center items-center bg-black snap-start"
         >
-          <h2 className=" text-8xl text-white font-barbra">
+          <h2 className=" text-8xl text-white font-jet">
             Nova sessão em breve!
           </h2>
         </section>
@@ -152,7 +178,7 @@ export default function Home() {
           className="w-full h-screen flex flex-col items-center bg-linear-to-t from-slate-950 to-lime-500 snap-start"
         >
           <div className="flex-1 flex flex-col gap-10 items-center justify-center px-6 text-center">
-            <h2 className="text-white text-6xl font-barbra">
+            <h2 className="text-white text-6xl font-jet">
               Vamos transformar sua ideia em realidade!
             </h2>
             <Button>whatsapp</Button>
