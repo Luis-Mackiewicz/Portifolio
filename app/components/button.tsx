@@ -12,7 +12,7 @@ export default function Button({ children }: ButtonProps) {
         relative
         overflow-hidden
         rounded-4xl
-        px-96
+        px-64
         py-3
         cursor-pointer
         text-black
