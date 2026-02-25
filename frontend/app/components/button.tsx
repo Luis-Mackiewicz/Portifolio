@@ -14,7 +14,7 @@ export default function Button({ children }: ButtonProps) {
         rounded-4xl
         px-64
         py-3
-        cursor-pointer
+        cursor-target
         text-black
         font-black
 

@@ -5,8 +5,7 @@ import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
 import { useEffect } from "react";
 import Button from "./components/button";
-import Card, { technologyCards } from "./components/card/card";
-import { listOfTechnologies } from "./components/card/card";
+import { technologyCards } from "./components/card/card";
 
 export default function Home() {
   const consoleText = `
@@ -131,7 +130,7 @@ export default function Home() {
                   alt="Luis Miguel tocando guitarra"
                   width={420}
                   sizes="(max-width: 768px) 100vw, 420px"
-                  className="rounded-3xl object-cover grayscale hover:grayscale-0 transition duration-500"
+                  className="rounded-3xl object-cover grayscale hover:grayscale-0 transition duration-500 cursor-target"
                 />
               </div>
 
