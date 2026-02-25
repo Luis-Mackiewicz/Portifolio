@@ -176,12 +176,12 @@ export default function Home() {
         </section>
         <section
           id="habilidades"
-          className="w-full h-screen flex justify-center items-center bg-black snap-start"
+          className="w-full h-screen flex flex-col gap-8 justify-center items-center bg-black snap-start"
         >
-          {/* <h2 className=" font-jet font-black text-white text-4xl">
+          <h2 className=" font-jet font-black text-white text-5xl">
             Habilidades
-          </h2> */}
-          <div className="grid grid-cols-5 grid-rows-2 gap-1 h-[70%] w-[80%] bg-neutral-800 rounded-4xl border-2 border-white">
+          </h2>
+          <div className="grid grid-cols-5 auto-rows-fr gap-4 p-6 h-[70%] w-[85%] bg-neutral-900 rounded-3xl border border-white/10 shadow-2xl">
             {technologyCards}
           </div>
         </section>

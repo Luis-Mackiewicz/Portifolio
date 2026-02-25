@@ -35,7 +35,7 @@ export default function Card({ onClick: onclick, children }: cardProps) {
   return (
     <div
       onClick={onclick}
-      className={`flex flex-row justify-center items-center bg-linear-to-tl from-sky-500 via-neutral-lime-500 to-lime-300 rounded-2xl font-jet `}
+      className={`flex items-center justify-center rounded-2xl bg-linear-to-tr from-neutral-900 via-sky-500 to-lime-400 text-white font-jet font-bold shadow-lg shadow-sky-500/30 transition-all duration-300 hover:shadow-lime-400/40 hover:scale-105 cursor-pointer`}
     >
       {children}
     </div>
