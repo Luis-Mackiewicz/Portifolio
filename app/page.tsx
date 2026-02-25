@@ -3,8 +3,8 @@
 import Header from "@/app/components/header";
 import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
-import Button from "./components/button";
 import { useEffect } from "react";
+import Button from "./components/button";
 
 export default function Home() {
   const consoleText = `
@@ -23,9 +23,6 @@ export default function Home() {
       background: linear-gradient(90deg, #6cb500, #00aaff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: monospace;
-      font-size: 12px;
-      line-height: 12px;
     `,
     );
   });
@@ -121,7 +118,9 @@ export default function Home() {
           className="w-full bg-black px-6 py-24 text-white snap-start "
         >
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-jet text-4xl md:text-5xl mb-12">Sobre</h2>
+            <h2 className="font-jet font-bold text-4xl md:text-5xl mb-12">
+              Sobre
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-80 items-center">
               <div className="flex justify-center">
@@ -174,11 +173,19 @@ export default function Home() {
           </h2>
         </section>
         <section
+          id="habilidades"
+          className="w-full h-screen flex justify-center items-center bg-black snap-start"
+        >
+          <h2 className=" font-jet font-black text-white text-4xl">
+            Habilidades
+          </h2>
+        </section>
+        <section
           id="contato"
-          className="w-full h-screen flex flex-col items-center bg-linear-to-t from-slate-950 to-lime-500 snap-start"
+          className="not-even:w-full h-screen flex flex-col items-center bg-linear-to-t from-slate-950 to-lime-500 snap-start"
         >
           <div className="flex-1 flex flex-col gap-10 items-center justify-center px-6 text-center">
-            <h2 className="text-white text-6xl font-jet">
+            <h2 className="text-white text-6xl font-black font-jet">
               Vamos transformar sua ideia em realidade!
             </h2>
             <Button>whatsapp</Button>

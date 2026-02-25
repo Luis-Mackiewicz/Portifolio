@@ -29,6 +29,10 @@ export default function Header() {
           </li>
 
           <li className="opacity-90 hover:opacity-50 transition">
+            <Link href="#habilidades">habilidades</Link>
+          </li>
+
+          <li className="opacity-90 hover:opacity-50 transition">
             <Link href="#contato">contato</Link>
           </li>
         </ul>

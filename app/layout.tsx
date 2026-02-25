@@ -18,7 +18,9 @@ export default function RootLayout({
       lang="pt-BR"
       className={` ${inter.variable} ${jetBrains.variable} antialiased`}
     >
-      <body className="font-inter">{children}</body>
+      <body className="font-inter" cz-shortcut-listen="true">
+        {children}
+      </body>
     </html>
   );
 }
