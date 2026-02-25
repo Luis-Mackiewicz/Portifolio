@@ -5,6 +5,8 @@ import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
 import { useEffect } from "react";
 import Button from "./components/button";
+import Card, { technologyCards } from "./components/card/card";
+import { listOfTechnologies } from "./components/card/card";
 
 export default function Home() {
   const consoleText = `
@@ -176,9 +178,12 @@ export default function Home() {
           id="habilidades"
           className="w-full h-screen flex justify-center items-center bg-black snap-start"
         >
-          <h2 className=" font-jet font-black text-white text-4xl">
+          {/* <h2 className=" font-jet font-black text-white text-4xl">
             Habilidades
-          </h2>
+          </h2> */}
+          <div className="grid grid-cols-5 grid-rows-2 gap-1 h-[70%] w-[80%] bg-neutral-800 rounded-4xl border-2 border-white">
+            {technologyCards}
+          </div>
         </section>
         <section
           id="contato"
