@@ -20,3 +20,7 @@ export default function Card({
 }: cardProps) {
   return <div></div>;
 }
+
+function somar(a: number, b: number) {
+  return a + b;
+}
