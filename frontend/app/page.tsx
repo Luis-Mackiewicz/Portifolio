@@ -5,7 +5,7 @@ import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
 import { useEffect } from "react";
 import Button from "./components/button";
-import { technologyCards } from "./components/card/card";
+import Card, { technologyCards, websiteCards } from "./components/card";
 export default function Home() {
   const consoleText = `
   ██╗     ██╗   ██╗██╗███████╗    ███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███████╗██╗    ██╗██╗ ██████╗███████╗
@@ -167,11 +167,14 @@ export default function Home() {
         </section>
         <section
           id="portifolio"
-          className="w-full h-screen flex justify-center items-center bg-black snap-start"
+          className="w-full h-screen flex flex-col gap-8 justify-center items-center bg-black snap-start"
         >
-          <h2 className=" text-8xl text-white font-jet">
-            Nova sessão em breve!
+          <h2 className=" text-5xl font-bold text-white font-jet">
+            Portifólio
           </h2>
+          <div className="grid grid-cols[repeat(auto-fit,minmax(200px,1fr))] gap-6 h-[30%] w-full max-w-[10%] mx-auto">
+            {websiteCards}
+          </div>
         </section>
         <section
           id="habilidades"
