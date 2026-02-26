@@ -8,10 +8,10 @@ export default function Header() {
         top-0
         z-50
         w-full
-        bg-black/5
+        bg-black/35
         backdrop-blur-md
         border-b
-        border-white/10
+        border-white/15
       "
     >
       <nav className=" h-12 w-full flex justify-center">
