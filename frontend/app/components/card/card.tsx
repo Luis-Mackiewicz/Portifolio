@@ -143,7 +143,7 @@ export default function Card({
   return (
     <div
       onClick={onclick}
-      className={`flex flex-col gap-4 items-center justify-center rounded-2xl bg-linear-to-br from-lime-500 via-sky-500 to-neutral-900 text-white font-jet font-bold shadow-lg shadow-sky-500/30 transition-all duration-300 hover:shadow-lime-400/40 hover:scale-105 cursor-target`}
+      className={`flex flex-col gap-4 items-center justify-center rounded-2xl bg-linear-to-tr from-lime-500 via-sky-700 to-sky-900 text-white font-jet font-bold shadow-lg shadow-sky-500/30 transition-all duration-300 hover:shadow-lime-400/40 hover:scale-105 cursor-target`}
     >
       {icon && (
         <Image

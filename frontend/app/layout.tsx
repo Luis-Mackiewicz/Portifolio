@@ -26,6 +26,7 @@ export default function RootLayout({
           parallaxOn
           hoverDuration={4}
         />
+
         {children}
       </body>
     </html>
