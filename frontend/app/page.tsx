@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useEffect } from "react";
 import Button from "./components/button";
 import { technologyCards } from "./components/card/card";
-
 export default function Home() {
   const consoleText = `
   ██╗     ██╗   ██╗██╗███████╗    ███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███████╗██╗    ██╗██╗ ██████╗███████╗
@@ -37,6 +36,7 @@ export default function Home() {
           className="
     relative
     flex
+    flex-col
     w-full
     h-screen
     items-center
@@ -57,7 +57,7 @@ export default function Home() {
             disableRemotePlayback
             className="
             
-      h-[60%]
+      h-[70%]
       w-[80%]
       max-w-none
       rounded-3xl
