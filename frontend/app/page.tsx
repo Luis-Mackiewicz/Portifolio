@@ -57,8 +57,8 @@ export default function Home() {
             disableRemotePlayback
             className="
             
-      h-[calc(100vh-8rem)]
-      w-[90vw]
+      h-[60%]
+      w-[80%]
       max-w-none
       rounded-3xl
       object-cover
