@@ -9,31 +9,25 @@ export default function Button({ children }: ButtonProps) {
   return (
     <button
       className="
-        relative
-        overflow-hidden
-        rounded-4xl
-        px-64
-        py-3
-        cursor-target
-        text-black
-        font-black
-
-        transform 
-        transition-all
-        duration-300
-        ease-out
-        hover:scale-105
+bg-linear-to-r
+ from-slate-900
+  via-purple-900
+   to-slate-900 
+    text-white/80
+      border
+      border-purple-500/30
+     p-2
+     w-1/3
+     rounded-2xl
+     font-jet
+     font-semibold
+    hover:scale-110
+    transition-all
+    duration-500
+    cursor-target
+    cursor-pointer
       "
     >
-      <Image
-        src={NoiseTexture}
-        alt=""
-        fill
-        className="object-cover pointer-events-none"
-        priority={false}
-      />
-
-      {/* Conteúdo do botão */}
       <span className="relative z-10">{children}</span>
     </button>
   );
