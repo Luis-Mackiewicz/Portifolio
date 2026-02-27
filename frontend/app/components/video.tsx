@@ -2,6 +2,7 @@
 import MobileImage from "@/public/home-mobile-image.jpg";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { div } from "three/src/nodes/math/OperatorNode.js";
 
 export function Video() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -15,12 +16,13 @@ export function Video() {
 
   if (!isDesktop) {
     return (
-      <Image
-        src={MobileImage}
-        alt="Programing image"
-        width={500}
-        className="w-4/5 h-4/5 rounded-4xl"
-      />
+      <div>
+        <Image
+          src={MobileImage}
+          alt="Programing image"
+          className="w-auto h-auto rounded-4xl "
+        />
+      </div>
     );
   }
 
