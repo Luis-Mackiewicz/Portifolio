@@ -31,13 +31,15 @@ export default function Modal({
     >
       <div
         className="
-        relative bg-gray-950
-         text-white rounded-xl shadown-xl w-11/12 
+        relative 
+        bg-linear-to-r
+         from-gray-700 via-gray-900 to-black
+         text-indigo-50 rounded-xl shadown-xl w-11/12 
         max-w-lg p-6 flex flex-col gap-6"
       >
         <button
           onClick={onClose}
-          className="absolute top-1 right-3.5 text-white text-2xl font-black hover:text-red-500 transition-colors cursor-target cursor-pointer"
+          className="absolute top-1 right-3.5 text-indigo-50 text-2xl font-black hover:text-red-500 transition-colors cursor-target cursor-pointer"
         >
           x
         </button>
@@ -54,9 +56,10 @@ export default function Modal({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-block  bg-linear-to-r from-slate-900 via-purple-900 to-slate-900 text-white font-bold px-4 py-2 rounded-lg text-center hover:bg-lime-500/30 transition-colors duration-300 cursor-target"
+            className="mt-4 inline-block bg-linear-to-r from-indigo-900 via-indigo-400 to-indigo-900
+ text-indigo-50 font-bold px-4 py-2 rounded-lg text-center hover:bg-lime-500/30 transition-colors duration-300 cursor-target"
           >
-            Ver mais
+            Ir ao site
           </a>
         )}
       </div>

@@ -56,7 +56,7 @@ export default function Home() {
       flex-col
       items-center
       text-center
-      text-white
+      text-indigo-50
       max-w-3xl
       px-6
       space-y-8
@@ -81,7 +81,7 @@ export default function Home() {
           font-bold
 
           md:text-xl
-          text-white/50
+          text-indigo-50/50
           tracking-wide
         "
               >
@@ -97,7 +97,7 @@ export default function Home() {
 
         <section
           id="sobre"
-          className="w-full h-screen flex flex-col justify-center items-center text-white
+          className="w-full h-screen flex flex-col justify-center items-center text-indigo-50
               bg-linear-to-r from-gray-700 via-gray-900 to-black
 
           snap-start "
@@ -116,7 +116,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="text-xs space-y-3 text-white">
+            <div className="text-xs space-y-3 text-indigo-50">
               <p>
                 Meu nome é Luis Miguel Mackiewicz , desenvolvedor fullstack
                 TypeScript, com experiência complementar em design e marketing
@@ -151,7 +151,7 @@ export default function Home() {
           className="w-full h-screen flex flex-col gap-8 justify-center items-center bg-linear-to-r from-gray-700 via-gray-900 to-black
  snap-start"
         >
-          <h2 className=" text-5xl font-bold text-white font-jet">
+          <h2 className=" text-5xl font-bold text-indigo-50 font-jet">
             Portifólio
           </h2>
           <div className="grid grid-cols[repeat(auto-fit,minmax(200px,1fr))] gap-6 h-[30%] w-full max-w-[10%] mx-auto">
@@ -163,20 +163,20 @@ export default function Home() {
           className="w-full h-screen flex flex-col gap-8 justify-center items-center bg-linear-to-r from-gray-700 via-gray-900 to-black
  snap-start"
         >
-          <h2 className=" font-jet font-black text-white text-5xl">
+          <h2 className=" font-jet font-black text-indigo-50 text-5xl">
             Habilidades
           </h2>
-          <div className="grid grid-cols-5 auto-rows-fr gap-4 p-6 h-[70%] w-[85%] bg-neutral-900 rounded-3xl border border-white/10 shadow-2xl">
+          <div className="grid grid-cols-5 auto-rows-fr gap-4 p-6 h-[70%] w-4/5 bg-gray-950 rounded-3xl border border-indigo-500/10 shadow-2xl">
             {technologyCards}
           </div>
         </section>
         <section
           id="contato"
-          className="not-even:w-full h-screen flex flex-col items-center bg-linear-to-t from-slate-950 to-sky-500 snap-start"
+          className="not-even:w-full h-screen flex flex-col items-center bg-linear-to-r from-gray-700 via-gray-900 to-black snap-start"
         >
           <div className="flex-1 flex flex-col gap-10 items-center justify-center px-6 text-center">
-            <h2 className="text-white text-6xl font-black font-jet">
-              Vamos transformar sua ideia em realidade!
+            <h2 className="text-indigo-50 text-6xl font-black font-jet">
+              Vamos transformar sua ideia<br></br> em realidade!
             </h2>
             <Button>whatsapp</Button>
           </div>

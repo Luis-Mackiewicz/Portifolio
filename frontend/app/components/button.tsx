@@ -9,11 +9,8 @@ export default function Button({ children }: ButtonProps) {
   return (
     <button
       className="
-bg-linear-to-r
- from-slate-900
-  via-purple-900
-   to-slate-900 
-    text-white/80
+bg-linear-to-r from-indigo-900 via-indigo-400 to-indigo-900
+    text-indigo-50
       border
       border-purple-500/30
      p-2

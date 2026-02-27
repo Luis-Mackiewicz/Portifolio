@@ -56,10 +56,10 @@ export default function Card({
     <>
       <div
         onClick={openModal}
-        className="flex flex-col gap-4 items-center justify-center 
-                   rounded-2xl bg-linear-to-tr  from-slate-900 via-purple-900 to-slate-900
-                   text-white font-jet font-bold shadow-lg shadow-slate-500/30 
-                   transition-all duration-300 hover:shadow-purple-400/40 
+        className="flex flex-col gap-4 items-center justify-center rounded-2xl 
+bg-linear-to-r from-indigo-900 via-indigo-400 to-indigo-900
+        text-indigo-50 font-jet font-bold shadow-lg shadow-indigo-500/30 
+                   transition-all duration-300 hover:shadow-indigo-100/30
                    hover:scale-105 cursor-target"
       >
         {icon && (

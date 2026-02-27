@@ -11,11 +11,11 @@ export default function Header() {
         bg-black/35
         backdrop-blur-md
         border-b
-        border-white/15
+        border-indigo-500/15
       "
     >
       <nav className=" h-12 w-full flex justify-center">
-        <ul className="w-full flex items-center justify-between gap-2 text-xs font-jet font-bold text-white sm:w-4/5 md:text-base">
+        <ul className="w-full flex items-center justify-between gap-2 text-xs font-jet font-bold text-indigo-50 sm:w-4/5 md:text-base">
           <li className="opacity-80 hover:opacity-50 transition cursor-target">
             <Link href="#inicio">início</Link>
           </li>
