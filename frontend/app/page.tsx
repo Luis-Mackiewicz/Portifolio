@@ -19,11 +19,10 @@ export default function Home() {
 
   useEffect(() => {
     console.log(
-      `%c${consoleText}`,
+      `%${consoleText}`,
       `
-      background: linear-gradient(90deg, #6cb500, #00aaff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+
+      
     `,
     );
   });
@@ -31,7 +30,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+      <div className="h-dvh overflow-y-scroll snap-y snap-mandatory">
         <section
           id="inicio"
           className="
@@ -39,7 +38,7 @@ export default function Home() {
     flex
     flex-col
     w-full
-    h-screen
+    h-dvh
     items-center
     justify-center
     bg-linear-to-r from-gray-700 via-gray-900 to-black
@@ -97,61 +96,60 @@ export default function Home() {
 
         <section
           id="sobre"
-          className="w-full h-screen flex flex-col justify-center items-center text-indigo-50
+          className="w-full h-dvh flex flex-col justify-center items-center text-indigo-50
               bg-linear-to-r from-gray-700 via-gray-900 to-black
 
-          snap-start "
+          snap-start"
         >
-          <h2 className="font-jet font-bold text-4xl md:text-5xl mb-12">
-            Sobre
-          </h2>
+          <div className="flex items-center justify-center h-11/12 w-4/5">
+            <div className="w-full h-full grid gap-2">
+              <h2 className="h-0.5 font-jet font-bold text-lg md:text-5xl mb-12">
+                Sobre
+              </h2>
+              <div className="h-3/4 flex items-baseline justify-center">
+                <Image
+                  src={MyselfImage}
+                  alt="Imagem de Luis Miguel tocando violão"
+                  className=" rounded-4xl object-cover grayscale hover:grayscale-0 transition duration-500 cursor-target"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center text-xs space-y-2 text-indigo-50">
+                <p>
+                  Meu nome é Luis Miguel Mackiewicz , desenvolvedor fullstack
+                  TypeScript, com experiência complementar em design e marketing
+                  digital.
+                </p>
 
-          <div className="w-4/5 grid grid-cols-1 md:grid-cols-2 items-center">
-            <div>
-              <Image
-                src={MyselfImage}
-                alt="Imagem de Luis Miguel tocando violão"
-                width={500}
-                className="rounded-4xl object-cover grayscale hover:grayscale-0 transition duration-500 cursor-target"
-              />
-            </div>
+                <p>
+                  Iniciei minha jornada na tecnologia em 2024, ao ingressar no
+                  curso de Análise e Desenvolvimento de Sistemas, e no mesmo ano
+                  conquistei meu primeiro estágio, onde embarquei no
+                  desenvolvimento de software.
+                </p>
 
-            <div className="text-xs space-y-3 text-indigo-50">
-              <p>
-                Meu nome é Luis Miguel Mackiewicz , desenvolvedor fullstack
-                TypeScript, com experiência complementar em design e marketing
-                digital.
-              </p>
+                <p>
+                  Em 2025, atuei com marketing digital, trabalhando com ADS e
+                  criação de conteúdo para plataformas como Instagram, Facebook,
+                  Google e TikTok — experiência que hoje aplico para criar
+                  produtos que não apenas funcionam, mas convertem.
+                </p>
 
-              <p>
-                Iniciei minha jornada na tecnologia em 2024, ao ingressar no
-                curso de Análise e Desenvolvimento de Sistemas, e no mesmo ano
-                conquistei meu primeiro estágio, onde embarquei no
-                desenvolvimento de software.
-              </p>
-
-              <p>
-                Em 2025, atuei com marketing digital, trabalhando com ADS e
-                criação de conteúdo para plataformas como Instagram, Facebook,
-                Google e TikTok — experiência que hoje aplico para criar
-                produtos que não apenas funcionam, mas convertem.
-              </p>
-
-              <p>
-                Atualmente atuo como desenvolvedor freelancer , ajudando
-                empresas e profissionais a irem além de apenas “ter um site”.
-                Meu foco é construir páginas estratégicas, pensadas para atrair
-                clientes, aumentar vendas e fortalecer marcas.
-              </p>
+                <p>
+                  Atualmente atuo como desenvolvedor freelancer , ajudando
+                  empresas e profissionais a irem além de apenas “ter um site”.
+                  Meu foco é construir páginas estratégicas, pensadas para
+                  atrair clientes, aumentar vendas e fortalecer marcas.
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <section
           id="portifolio"
-          className="w-full h-screen flex flex-col gap-8 justify-center items-center bg-linear-to-r from-gray-700 via-gray-900 to-black
+          className="w-full h-dvh flex flex-col gap-8 justify-center items-center bg-linear-to-r from-gray-700 via-gray-900 to-black
  snap-start"
         >
-          <h2 className=" text-5xl font-bold text-indigo-50 font-jet">
+          <h2 className=" text-lg font-bold text-indigo-50 font-jet">
             Portifólio
           </h2>
           <div className="grid grid-cols[repeat(auto-fit,minmax(200px,1fr))] gap-6 h-[30%] w-full max-w-[10%] mx-auto">
@@ -160,10 +158,10 @@ export default function Home() {
         </section>
         <section
           id="habilidades"
-          className="w-full h-screen flex flex-col gap-8 justify-center items-center bg-linear-to-r from-gray-700 via-gray-900 to-black
+          className="w-full h-dvh flex flex-col gap-8 justify-center items-center bg-linear-to-r from-gray-700 via-gray-900 to-black
  snap-start"
         >
-          <h2 className=" font-jet font-black text-indigo-50 text-5xl">
+          <h2 className=" font-jet font-black text-indigo-50 text-lg">
             Habilidades
           </h2>
           <div className="grid grid-cols-5 auto-rows-fr gap-4 p-6 h-[70%] w-4/5 bg-gray-950 rounded-3xl border border-indigo-500/10 shadow-2xl">
@@ -172,10 +170,10 @@ export default function Home() {
         </section>
         <section
           id="contato"
-          className="not-even:w-full h-screen flex flex-col items-center bg-linear-to-r from-gray-700 via-gray-900 to-black snap-start"
+          className="not-even:w-full h-dvh flex flex-col items-center bg-linear-to-r from-gray-700 via-gray-900 to-black snap-start"
         >
           <div className="flex-1 flex flex-col gap-10 items-center justify-center px-6 text-center">
-            <h2 className="text-indigo-50 text-6xl font-black font-jet">
+            <h2 className="text-indigo-50 text-xl font-black font-jet">
               Vamos transformar sua ideia<br></br> em realidade!
             </h2>
             <Button>whatsapp</Button>
