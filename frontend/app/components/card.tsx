@@ -10,6 +10,7 @@ export interface cardProps {
   icon?: string;
   description?: string;
   link?: string;
+  className?: string;
 }
 
 export const technologyCards = listOfTechnologies.map((card) => {
@@ -29,6 +30,7 @@ export const technologyCards = listOfTechnologies.map((card) => {
 export const websiteCards = listOfWebsites.map((card) => {
   return (
     <Card
+      className="flex items-center justify-center p-30 min-w-40 max-w-100"
       key={card.id}
       icon={card.icon}
       title={card.title}
@@ -45,10 +47,10 @@ export default function Card({
   title,
   icon,
   description,
+  className,
   link,
 }: cardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
@@ -56,11 +58,29 @@ export default function Card({
     <>
       <div
         onClick={openModal}
-        className="flex flex-col gap-4 items-center justify-center rounded-2xl 
-bg-linear-to-r from-indigo-900 via-indigo-400 to-indigo-900
-        text-indigo-50 font-jet font-bold shadow-lg shadow-indigo-500/30 
-                   transition-all duration-300 hover:shadow-indigo-100/30
-                   hover:scale-105 cursor-target"
+        className={`
+    flex 
+    flex-col 
+    gap-4
+    items-center 
+    justify-center 
+    rounded-2xl 
+    bg-linear-to-r
+    from-indigo-900
+    via-indigo-400
+    to-indigo-900
+    text-indigo-50
+    font-jet 
+    font-bold 
+    shadow-lg 
+    shadow-indigo-500/30 
+    transition-all 
+    duration-300 
+    hover:shadow-indigo-100/30
+    hover:scale-105 
+    cursor-target
+    ${className}
+  `}
       >
         {icon && (
           <Image
@@ -71,9 +91,9 @@ bg-linear-to-r from-indigo-900 via-indigo-400 to-indigo-900
             className="object-contain"
           />
         )}
-        {children}
-      </div>
 
+        <span className="whitespace-nowrap text-center">{children}</span>
+      </div>
       {isModalOpen && (
         <Modal
           title={title}

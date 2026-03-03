@@ -5,7 +5,7 @@ import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
 import { useEffect } from "react";
 import Button from "./components/button";
-import Card, { technologyCards, websiteCards } from "./components/card";
+import { technologyCards, websiteCards } from "./components/card";
 import { Video } from "./components/video";
 export default function Home() {
   const consoleText = `
@@ -117,7 +117,7 @@ export default function Home() {
             className="
           grid 
           grid-cols-1 
-          gap-4 
+          gap-y-16
           md:w-4/5 
           lg:grid-cols-2"
           >
@@ -220,25 +220,32 @@ export default function Home() {
          to-black
           snap-start"
         >
-          <h2
-            className="
+          <div className="h-full w-full flex flex-col gap-y-16 justify-center items-center md:h-11/12 md:w-4/5">
+            <div className="w-full flex items-center justify-center">
+              <h2
+                className="
            text-indigo-50 
            font-jet font-bold 
-           text-lg 
+           text-lg
+
            md:text-3xl"
-          >
-            Portifólio
-          </h2>
-          <div
-            className="
-          grid 
-          grid-cols[repeat(auto-fit,minmax(200px,1fr))] 
-          gap-6 h-[30%] 
-          w-full 
-          max-w-[10%] 
-          mx-auto"
-          >
-            {websiteCards}
+              >
+                Portifólio
+              </h2>
+            </div>
+
+            <div
+              className="
+              flex
+              flex-col
+              items-center
+              justify-center
+              w-4/5
+
+          "
+            >
+              {websiteCards}
+            </div>
           </div>
         </section>
         <section
@@ -269,15 +276,20 @@ export default function Home() {
           <div
             className="
           grid 
-          grid-cols-5 
+          grid-cols-2
+          gap-4
+          p-8
           auto-rows-fr 
-          gap-4 p-6 h-[70%] 
           w-4/5 
           bg-gray-950 
           rounded-3xl 
           border
            border-indigo-500/10 
-           shadow-2xl"
+           shadow-2xl
+           md:grid-cols-3
+           lg:grid-cols-5
+           min-h-3/4
+           "
           >
             {technologyCards}
           </div>
