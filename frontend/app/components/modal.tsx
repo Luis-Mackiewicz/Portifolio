@@ -39,7 +39,7 @@ export default function Modal({
       >
         <button
           onClick={onClose}
-          className="absolute top-1 right-3.5 text-indigo-50 text-2xl font-black hover:text-red-500 transition-colors lg:cursor-target cursor-pointer"
+          className="absolute top-1 right-3.5 text-indigo-50 text-2xl font-black hover:text-red-500 transition-colors cursor-target cursor-pointer"
         >
           x
         </button>
@@ -57,7 +57,7 @@ export default function Modal({
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-block bg-linear-to-r from-indigo-900 via-indigo-400 to-indigo-900
- text-indigo-50 font-bold px-4 py-2 rounded-lg text-center hover:bg-lime-500/30 transition-colors duration-300 lg:cursor-target"
+ text-indigo-50 font-bold px-4 py-2 rounded-lg text-center hover:bg-lime-500/30 transition-colors duration-300 cursor-target"
           >
             Ir ao site
           </a>

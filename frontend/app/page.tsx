@@ -158,7 +158,7 @@ export default function Home() {
                 duration-500 
                 md:w-2xs 
                 lg:w-96
-                lg:cursor-target
+                cursor-target
                 "
               />
             </div>
@@ -270,7 +270,9 @@ export default function Home() {
           font-jet 
           font-black
            text-indigo-50 
-           text-lg"
+           text-lg
+           md:text-3xl
+           "
           >
             Habilidades
           </h2>
@@ -310,25 +312,31 @@ export default function Home() {
             snap-start"
         >
           <div
-            className="flex-1 
+            className="
+          flex-1 
           flex 
           flex-col 
-          gap-10 
+          gap-18 
           items-center 
           justify-center 
           px-6 
-          text-center"
+          text-center
+          md:w-11/12
+          h-4/5
+          "
           >
             <h2
               className="
             text-indigo-50 
             text-xl 
             font-black 
-            font-jet"
+            font-jet
+            md:text-3xl
+            "
             >
               Vamos transformar sua ideia<br></br> em realidade!
             </h2>
-            <Button>whatsapp</Button>
+            <Button className="w-">whatsapp</Button>
           </div>
 
           <footer
