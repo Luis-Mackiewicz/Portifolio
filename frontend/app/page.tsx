@@ -96,51 +96,50 @@ export default function Home() {
 
         <section
           id="sobre"
-          className="w-full h-dvh flex flex-col justify-center items-center text-indigo-50
+          className="w-full h-dvh flex justify-center items-center text-indigo-50
               bg-linear-to-r from-gray-700 via-gray-900 to-black
 
           snap-start"
         >
-          <div className="flex items-center justify-center h-11/12 w-4/5">
-            <div className="w-full h-full grid gap-2">
-              <h2 className="h-0.5 font-jet font-bold text-lg md:text-5xl mb-12">
-                Sobre
-              </h2>
-              <div className="h-3/4 flex items-baseline justify-center">
-                <Image
-                  src={MyselfImage}
-                  alt="Imagem de Luis Miguel tocando violão"
-                  className=" rounded-4xl object-cover grayscale hover:grayscale-0 transition duration-500 cursor-target"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center text-xs space-y-2 text-indigo-50">
-                <p>
-                  Meu nome é Luis Miguel Mackiewicz , desenvolvedor fullstack
-                  TypeScript, com experiência complementar em design e marketing
-                  digital.
-                </p>
+          <div className="grid grid-cols-1 gap-4 md:w-4/5 lg:grid-cols-2">
+            <div className="flex items-center justify-center lg:col-span-2">
+              <h2 className="font-jet font-bold text-lg md:text-3xl">Sobre</h2>
+            </div>
 
-                <p>
-                  Iniciei minha jornada na tecnologia em 2024, ao ingressar no
-                  curso de Análise e Desenvolvimento de Sistemas, e no mesmo ano
-                  conquistei meu primeiro estágio, onde embarquei no
-                  desenvolvimento de software.
-                </p>
+            <div className="flex items-center justify-center">
+              <Image
+                src={MyselfImage}
+                alt="Imagem de Luis Miguel tocando violão"
+                className="w-1/2 rounded-4xl object-cover grayscale hover:grayscale-0 transition duration-500 md:w-2xs cursor-target lg:w-96"
+              />
+            </div>
+            <div className="flex flex-col items-center justify-center text-base pl-4 pr-4 space-y-2 md:text-lg md:pl-0 md:pr-0">
+              <p>
+                Meu nome é Luis Miguel Mackiewicz , desenvolvedor fullstack
+                TypeScript, com experiência complementar em design e marketing
+                digital.
+              </p>
 
-                <p>
-                  Em 2025, atuei com marketing digital, trabalhando com ADS e
-                  criação de conteúdo para plataformas como Instagram, Facebook,
-                  Google e TikTok — experiência que hoje aplico para criar
-                  produtos que não apenas funcionam, mas convertem.
-                </p>
+              <p>
+                Iniciei minha jornada na tecnologia em 2024, ao ingressar no
+                curso de Análise e Desenvolvimento de Sistemas, e no mesmo ano
+                conquistei meu primeiro estágio, onde embarquei no
+                desenvolvimento de software.
+              </p>
 
-                <p>
-                  Atualmente atuo como desenvolvedor freelancer , ajudando
-                  empresas e profissionais a irem além de apenas “ter um site”.
-                  Meu foco é construir páginas estratégicas, pensadas para
-                  atrair clientes, aumentar vendas e fortalecer marcas.
-                </p>
-              </div>
+              <p>
+                Em 2025, atuei com marketing digital, trabalhando com ADS e
+                criação de conteúdo para plataformas como Instagram, Facebook,
+                Google e TikTok — experiência que hoje aplico para criar
+                produtos que não apenas funcionam, mas convertem.
+              </p>
+
+              <p>
+                Atualmente atuo como desenvolvedor freelancer , ajudando
+                empresas e profissionais a irem além de apenas “ter um site”.
+                Meu foco é construir páginas estratégicas, pensadas para atrair
+                clientes, aumentar vendas e fortalecer marcas.
+              </p>
             </div>
           </div>
         </section>
