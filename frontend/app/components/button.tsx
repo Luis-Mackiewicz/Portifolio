@@ -6,9 +6,18 @@ type ButtonProps = {
   className?: string;
 };
 
+const phone = "5544991384873";
+const message = "Olá! Vim pelo site e gostaria de saber mais informações.";
+
+const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
 export default function Button({ children, className }: ButtonProps) {
   return (
-    <button
+    <a
+      href={whatsappUrl}
+      target="_blank"
+      aria-label="abrir conversa no whatsapp"
+      role="button"
       className={`
       bg-linear-to-r
      from-indigo-900
@@ -31,6 +40,6 @@ export default function Button({ children, className }: ButtonProps) {
         `}
     >
       <span className="relative z-10">{children}</span>
-    </button>
+    </a>
   );
 }

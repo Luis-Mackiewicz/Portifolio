@@ -92,9 +92,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="w-full">
-              <Button>contato</Button>
-            </div>
+            <Button>contato</Button>
           </div>
         </section>
 
