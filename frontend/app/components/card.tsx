@@ -78,7 +78,7 @@ export default function Card({
     duration-300 
     hover:shadow-indigo-100/30
     hover:scale-105 
-    cursor-target
+    lg:cursor-target
     ${className}
   `}
       >

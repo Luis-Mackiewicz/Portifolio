@@ -16,23 +16,23 @@ export default function Header() {
     >
       <nav className=" h-12 w-full flex justify-center">
         <ul className="w-full flex items-center justify-between gap-2 text-xs font-jet font-bold text-indigo-50 sm:w-4/5 md:text-base">
-          <li className="opacity-80 hover:opacity-50 transition cursor-target">
+          <li className="opacity-80 hover:opacity-50 transition lg:cursor-target">
             <Link href="#inicio">início</Link>
           </li>
 
-          <li className="opacity-80 hover:opacity-50 transition cursor-target">
+          <li className="opacity-80 hover:opacity-50 transition lg:cursor-target">
             <Link href="#sobre">sobre</Link>
           </li>
 
-          <li className="opacity-80 hover:opacity-50 transition cursor-target">
+          <li className="opacity-80 hover:opacity-50 transition lg:cursor-target">
             <Link href="#portifolio">portifólio</Link>
           </li>
 
-          <li className="opacity-80 hover:opacity-50 transition cursor-target">
+          <li className="opacity-80 hover:opacity-50 transition lg:cursor-target">
             <Link href="#habilidades">habilidades</Link>
           </li>
 
-          <li className="opacity-80 hover:opacity-50 transition cursor-target">
+          <li className="opacity-80 hover:opacity-50 transition lg:cursor-target">
             <Link href="#contato">contato</Link>
           </li>
         </ul>

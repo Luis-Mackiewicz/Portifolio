@@ -157,8 +157,9 @@ export default function Home() {
                 transition 
                 duration-500 
                 md:w-2xs 
-                cursor-target 
-                lg:w-96"
+                lg:w-96
+                lg:cursor-target
+                "
               />
             </div>
             <div

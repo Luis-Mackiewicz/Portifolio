@@ -21,8 +21,7 @@ bg-linear-to-r from-indigo-900 via-indigo-400 to-indigo-900
     hover:scale-110
     transition-all
     duration-500
-    cursor-target
-    cursor-pointer
+    lg:cursor-target
       "
     >
       <span className="relative z-10">{children}</span>
