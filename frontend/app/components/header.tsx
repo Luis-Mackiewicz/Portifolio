@@ -11,7 +11,7 @@ export default function Header() {
         bg-black/35
         backdrop-blur-md
         border-b
-        border-indigo-500/15
+        border-white/10
       "
     >
       <nav className=" h-12 w-full flex justify-center">
