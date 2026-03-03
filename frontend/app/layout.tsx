@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { inter, jetBrains } from "@/app/ui/fonts";
-import TargetCursor from "./components/TargetCursor";
 export const metadata: Metadata = {
   title: "Luis Mackiewicz | Developer",
   description:
@@ -20,13 +19,6 @@ export default function RootLayout({
       className={` ${inter.variable} ${jetBrains.variable} antialiased`}
     >
       <body className="font-inter" cz-shortcut-listen="true">
-        <TargetCursor
-          spinDuration={5}
-          hideDefaultCursor
-          parallaxOn
-          hoverDuration={4}
-        />
-
         {children}
       </body>
     </html>
