@@ -30,7 +30,7 @@ export const technologyCards = listOfTechnologies.map((card) => {
 export const websiteCards = listOfWebsites.map((card) => {
   return (
     <Card
-      className="flex items-center justify-center p-30 min-w-40 max-w-100"
+      className="flex items-center justify-center p-8 md:p-16 lg:p-32"
       key={card.id}
       icon={card.icon}
       title={card.title}
@@ -60,8 +60,9 @@ export default function Card({
         onClick={openModal}
         className={`
     flex 
-    flex-col 
+    flex-col
     gap-4
+    pt-2
     items-center 
     justify-center 
     rounded-2xl 
@@ -71,6 +72,7 @@ export default function Card({
     to-indigo-900
     text-indigo-50
     font-jet 
+    text-[8px]
     font-bold 
     shadow-lg 
     shadow-indigo-500/30 
@@ -79,6 +81,8 @@ export default function Card({
     hover:shadow-indigo-100/30
     hover:scale-105 
     cursor-target
+    sm:text-sm
+    md:text-base
     ${className}
   `}
       >

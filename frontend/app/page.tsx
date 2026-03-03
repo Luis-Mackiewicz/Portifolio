@@ -113,10 +113,12 @@ export default function Home() {
           <div
             className="
           grid 
-          grid-cols-1 
-          gap-y-16
+          grid-cols-1
+          gap-y-4 
           md:w-4/5 
-          lg:grid-cols-2"
+          lg:grid-cols-2
+          mt-12          
+          "
           >
             <div
               className="
@@ -146,14 +148,13 @@ export default function Home() {
                 src={MyselfImage}
                 alt="Imagem de Luis Miguel tocando violão"
                 className="
-                w-1/2 
+                w-1/5
                 rounded-4xl 
                 object-cover 
                 grayscale 
                 hover:grayscale-0 
                 transition 
-                duration-500 
-                md:w-2xs 
+                duration-500
                 lg:w-96
                 cursor-target
                 "
@@ -165,13 +166,15 @@ export default function Home() {
             flex-col 
             items-center 
             justify-center 
-            text-base 
+            text-sm
             pl-4 
             pr-4 
             space-y-2 
             md:text-lg 
             md:pl-0 
-            md:pr-0"
+            md:pr-0
+            md
+            "
             >
               <p>
                 Meu nome é Luis Miguel Mackiewicz , desenvolvedor fullstack
@@ -218,7 +221,7 @@ export default function Home() {
          to-black
           snap-start"
         >
-          <div className="h-full w-full flex flex-col gap-y-16 justify-center items-center md:h-11/12 md:w-4/5">
+          <div className="h-11/12 w-4/5 mt-12 flex flex-col gap-y-16 justify-center items-center">
             <div className="w-full flex items-center justify-center">
               <h2
                 className="
@@ -232,18 +235,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div
-              className="
-              flex
-              flex-col
-              items-center
-              justify-center
-              w-4/5
-
-          "
-            >
-              {websiteCards}
-            </div>
+            {websiteCards}
           </div>
         </section>
         <section
@@ -276,19 +268,19 @@ export default function Home() {
           <div
             className="
           grid 
-          grid-cols-2
+          grid-cols-3
           gap-4
-          p-8
+          p-4
           auto-rows-fr 
-          w-4/5 
           bg-gray-950 
           rounded-3xl 
           border
            border-indigo-500/10 
            shadow-2xl
-           md:grid-cols-3
+           md:grid-cols-4
            lg:grid-cols-5
-           min-h-3/4
+           md:h-3/4
+           md:w-4/5
            "
           >
             {technologyCards}
