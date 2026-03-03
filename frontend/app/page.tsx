@@ -19,13 +19,12 @@ export default function Home() {
 
   useEffect(() => {
     console.log(
-      `%${consoleText}`,
+      `%c${consoleText}`,
       `
-
-      
+      color: #666BDE;
     `,
     );
-  });
+  }, []);
 
   return (
     <div>
