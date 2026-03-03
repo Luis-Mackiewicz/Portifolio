@@ -30,7 +30,13 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="h-dvh overflow-y-scroll snap-y snap-mandatory">
+      <div
+        className="
+      h-dvh 
+      overflow-y-scroll 
+      snap-y 
+      snap-mandatory"
+      >
         <section
           id="inicio"
           className="
@@ -78,7 +84,6 @@ export default function Home() {
                 className="
           text-lg
           font-bold
-
           md:text-xl
           text-indigo-50/50
           tracking-wide
@@ -96,24 +101,80 @@ export default function Home() {
 
         <section
           id="sobre"
-          className="w-full h-dvh flex justify-center items-center text-indigo-50
-              bg-linear-to-r from-gray-700 via-gray-900 to-black
-
+          className="w-full 
+          h-dvh 
+          flex 
+          justify-center 
+          items-center
+         text-indigo-50
+          bg-linear-to-r
+         from-gray-700
+         via-gray-900
+         to-black
           snap-start"
         >
-          <div className="grid grid-cols-1 gap-4 md:w-4/5 lg:grid-cols-2">
-            <div className="flex items-center justify-center lg:col-span-2">
-              <h2 className="font-jet font-bold text-lg md:text-3xl">Sobre</h2>
+          <div
+            className="
+          grid 
+          grid-cols-1 
+          gap-4 
+          md:w-4/5 
+          lg:grid-cols-2"
+          >
+            <div
+              className="
+            flex 
+            items-center 
+            justify-center 
+            lg:col-span-2"
+            >
+              <h2
+                className="
+              font-jet 
+              font-bold 
+              text-lg 
+              md:text-3xl"
+              >
+                Sobre
+              </h2>
             </div>
 
-            <div className="flex items-center justify-center">
+            <div
+              className="
+            flex 
+            items-center 
+            justify-center"
+            >
               <Image
                 src={MyselfImage}
                 alt="Imagem de Luis Miguel tocando violão"
-                className="w-1/2 rounded-4xl object-cover grayscale hover:grayscale-0 transition duration-500 md:w-2xs cursor-target lg:w-96"
+                className="
+                w-1/2 
+                rounded-4xl 
+                object-cover 
+                grayscale 
+                hover:grayscale-0 
+                transition 
+                duration-500 
+                md:w-2xs 
+                cursor-target 
+                lg:w-96"
               />
             </div>
-            <div className="flex flex-col items-center justify-center text-base pl-4 pr-4 space-y-2 md:text-lg md:pl-0 md:pr-0">
+            <div
+              className="
+            flex 
+            flex-col 
+            items-center 
+            justify-center 
+            text-base 
+            pl-4 
+            pr-4 
+            space-y-2 
+            md:text-lg 
+            md:pl-0 
+            md:pr-0"
+            >
               <p>
                 Meu nome é Luis Miguel Mackiewicz , desenvolvedor fullstack
                 TypeScript, com experiência complementar em design e marketing
@@ -145,40 +206,128 @@ export default function Home() {
         </section>
         <section
           id="portifolio"
-          className="w-full h-dvh flex flex-col gap-8 justify-center items-center bg-linear-to-r from-gray-700 via-gray-900 to-black
- snap-start"
+          className="
+          w-full
+          h-dvh
+          flex
+          flex-col
+          gap-8 
+          justify-center 
+          items-center 
+          bg-linear-to-r
+         from-gray-700
+         via-gray-900
+         to-black
+          snap-start"
         >
-          <h2 className=" text-lg font-bold text-indigo-50 font-jet">
+          <h2
+            className="
+           text-indigo-50 
+           font-jet font-bold 
+           text-lg 
+           md:text-3xl"
+          >
             Portifólio
           </h2>
-          <div className="grid grid-cols[repeat(auto-fit,minmax(200px,1fr))] gap-6 h-[30%] w-full max-w-[10%] mx-auto">
+          <div
+            className="
+          grid 
+          grid-cols[repeat(auto-fit,minmax(200px,1fr))] 
+          gap-6 h-[30%] 
+          w-full 
+          max-w-[10%] 
+          mx-auto"
+          >
             {websiteCards}
           </div>
         </section>
         <section
           id="habilidades"
-          className="w-full h-dvh flex flex-col gap-8 justify-center items-center bg-linear-to-r from-gray-700 via-gray-900 to-black
- snap-start"
+          className="
+          w-full 
+          h-dvh 
+          flex 
+          flex-col 
+          gap-8 
+          justify-center 
+          items-center 
+          bg-linear-to-r
+         from-gray-700
+         via-gray-900
+         to-black
+          snap-start"
         >
-          <h2 className=" font-jet font-black text-indigo-50 text-lg">
+          <h2
+            className="
+          font-jet 
+          font-black
+           text-indigo-50 
+           text-lg"
+          >
             Habilidades
           </h2>
-          <div className="grid grid-cols-5 auto-rows-fr gap-4 p-6 h-[70%] w-4/5 bg-gray-950 rounded-3xl border border-indigo-500/10 shadow-2xl">
+          <div
+            className="
+          grid 
+          grid-cols-5 
+          auto-rows-fr 
+          gap-4 p-6 h-[70%] 
+          w-4/5 
+          bg-gray-950 
+          rounded-3xl 
+          border
+           border-indigo-500/10 
+           shadow-2xl"
+          >
             {technologyCards}
           </div>
         </section>
         <section
           id="contato"
-          className="not-even:w-full h-dvh flex flex-col items-center bg-linear-to-r from-gray-700 via-gray-900 to-black snap-start"
+          className="
+          not-even:w-full 
+          h-dvh 
+          flex 
+          flex-col 
+          items-center 
+          bg-linear-to-r
+           from-gray-700 
+           via-gray-900
+            to-black 
+            snap-start"
         >
-          <div className="flex-1 flex flex-col gap-10 items-center justify-center px-6 text-center">
-            <h2 className="text-indigo-50 text-xl font-black font-jet">
+          <div
+            className="flex-1 
+          flex 
+          flex-col 
+          gap-10 
+          items-center 
+          justify-center 
+          px-6 
+          text-center"
+          >
+            <h2
+              className="
+            text-indigo-50 
+            text-xl 
+            font-black 
+            font-jet"
+            >
               Vamos transformar sua ideia<br></br> em realidade!
             </h2>
             <Button>whatsapp</Button>
           </div>
 
-          <footer className="relative z-10 mb-8 text-zinc-500 text-xs tracking-widest uppercase">
+          <footer
+            className="
+          relative 
+          z-10 
+          mb-8 
+          text-zinc-500 
+          text-xs 
+          tracking-widest 
+          uppercase"
+          >
             © 2026 Luis Miguel Mackiewicz. All rights reserved.
           </footer>
         </section>
