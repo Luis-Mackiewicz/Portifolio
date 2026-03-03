@@ -1,6 +1,3 @@
-import Image from "next/image";
-import NoiseTexture from "@/public/noise-texture.jpg";
-
 type ButtonProps = {
   children: React.ReactNode;
   className?: string;
