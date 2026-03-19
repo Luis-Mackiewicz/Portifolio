@@ -1,12 +1,12 @@
 "use client";
 
-import Header from "@/app/components/header";
+import Header from "@/components/header";
 import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
 import { useEffect } from "react";
-import Button from "./components/button";
-import { technologyCards, websiteCards } from "./components/card";
-import { Video } from "./components/video";
+import Button from "../components/button";
+import { technologyCards, websiteCards } from "../components/card";
+import { Video } from "../components/video";
 export default function Home() {
   const consoleText = `
   ██╗     ██╗   ██╗██╗███████╗    ███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███████╗██╗    ██╗██╗ ██████╗███████╗
