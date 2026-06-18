@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { inter, jetBrains } from "@/app/ui/fonts";
+import TargetCursor from "@/components/target-cursor";
 
 const siteUrl = "https://luis-mackiewicz.com.br";
 
@@ -48,6 +49,7 @@ export default function RootLayout({
       className={` ${inter.variable} ${jetBrains.variable} antialiased`}
     >
       <body className="font-inter" cz-shortcut-listen="true">
+        <TargetCursor />
         {children}
       </body>
     </html>

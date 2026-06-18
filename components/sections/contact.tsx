@@ -33,7 +33,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.alt}
-              className="opacity-60 hover:opacity-100 transition-opacity duration-300"
+              className="opacity-60 hover:opacity-100 transition-opacity duration-300 cursor-target"
             >
               <Image
                 src={link.src}
