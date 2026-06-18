@@ -189,7 +189,7 @@ export const listOfWebsites = [
     id: 1,
     name: "Camargo Advocacia",
     title: "Camargo Advocacia",
-    icon: "camargo-advocacia.svg",
+    icon: "/thumbnails/camargo-advocacia.svg",
     description:
       "Site institucional do escritório Camargo Advocacia, desenvolvido com foco em usabilidade e design moderno.",
     link: "https://www.camargoadvocacia.com.br/",
@@ -198,7 +198,7 @@ export const listOfWebsites = [
     id: 2,
     name: "Cantinho da Tia Nelci",
     title: "Cantinho da Tia Nelci",
-    icon: "tianelci.svg",
+    icon: "/thumbnails/tianelci.svg",
     description:
       "Landing page de costura criativa com galeria de produtos, serviços e contato direto via WhatsApp.",
     link: "https://tianelci.com.br/",

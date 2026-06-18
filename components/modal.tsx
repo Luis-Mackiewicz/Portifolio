@@ -3,7 +3,7 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
-import { cardProps } from "./card";
+import { cardProps } from "./technology-card";
 
 interface ModalProps extends cardProps {
   description?: string;
