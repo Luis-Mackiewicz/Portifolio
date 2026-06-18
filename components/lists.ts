@@ -1,9 +1,10 @@
 export const listOfTechnologies = [
+  // ── Frontend ──
   {
     id: 1,
     name: "HTML",
     title: "html",
-    icon: "/skills-icon/html.png",
+    icon: "/skills-icon/html5.svg",
     description:
       "HTML é a linguagem de marcação usada para estruturar páginas web, definindo títulos, parágrafos, listas, links e outros elementos.",
     link: "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
@@ -12,7 +13,7 @@ export const listOfTechnologies = [
     id: 2,
     name: "CSS",
     title: "css",
-    icon: "/skills-icon/css.png",
+    icon: "/skills-icon/css.svg",
     description:
       "CSS é a linguagem de estilização usada para controlar a aparência de páginas web, incluindo cores, fontes, layouts e animações.",
     link: "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
@@ -21,7 +22,7 @@ export const listOfTechnologies = [
     id: 3,
     name: "JS",
     title: "js",
-    icon: "/skills-icon/js.png",
+    icon: "/skills-icon/javascript.svg",
     description:
       "JavaScript é a linguagem de programação que adiciona interatividade às páginas web, manipulando elementos e respondendo a eventos do usuário.",
     link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
@@ -30,79 +31,80 @@ export const listOfTechnologies = [
     id: 4,
     name: "TS",
     title: "ts",
-    icon: "/skills-icon/ts.png",
+    icon: "/skills-icon/typescript.svg",
     description:
       "TypeScript é um superconjunto do JavaScript que adiciona tipagem estática, melhorando a segurança e manutenção do código.",
     link: "https://www.typescriptlang.org/",
   },
   {
     id: 5,
-    name: "Tailwindcss",
-    title: "tailwindcss",
-    icon: "/skills-icon/tailwindcss.png",
-    description:
-      "Tailwind CSS é um framework utilitário para estilização rápida e responsiva de componentes web sem sair do HTML.",
-    link: "https://tailwindcss.com/",
-  },
-  {
-    id: 6,
     name: "React",
     title: "react",
-    icon: "/skills-icon/react.png",
+    icon: "/skills-icon/react_light.svg",
     description:
       "React é uma biblioteca JavaScript para construir interfaces de usuário com componentes reutilizáveis e estado reativo.",
     link: "https://reactjs.org/",
   },
   {
+    id: 6,
+    name: "React Native",
+    title: "react-native",
+    icon: "/skills-icon/react_native.svg",
+    description:
+      "React Native é um framework para desenvolvimento de aplicativos mobile multiplataforma usando React e JavaScript/TypeScript.",
+    link: "https://reactnative.dev/",
+  },
+  {
     id: 7,
-    name: "React-hook-form",
-    title: "react-hook-form",
-    icon: "/skills-icon/react-hook-form.png",
-    description:
-      "React Hook Form facilita a criação e validação de formulários em React, usando hooks para controlar estado e erros.",
-    link: "https://react-hook-form.com/",
-  },
-  {
-    id: 8,
-    name: "Tanstack",
-    title: "tanstack",
-    icon: "/skills-icon/tanstack.png",
-    description:
-      "TanStack Query (React Query) é uma biblioteca para gerenciar e sincronizar dados assíncronos em aplicações React.",
-    link: "https://tanstack.com/query/latest",
-  },
-  {
-    id: 9,
-    name: "Zod",
-    title: "zod",
-    icon: "/skills-icon/zod.png",
-    description:
-      "Zod é uma biblioteca de validação e parsing de dados para TypeScript e JavaScript, permitindo definir schemas seguros.",
-    link: "https://zod.dev/",
-  },
-  {
-    id: 10,
     name: "Next",
     title: "next",
-    icon: "/skills-icon/next.png",
+    icon: "/skills-icon/nextjs_icon_dark.svg",
     description:
       "Next.js é um framework React para aplicações web, oferecendo renderização server-side, geração estática e roteamento avançado.",
     link: "https://nextjs.org/",
   },
   {
-    id: 11,
+    id: 8,
+    name: "Tailwindcss",
+    title: "tailwindcss",
+    icon: "/skills-icon/tailwindcss.svg",
+    description:
+      "Tailwind CSS é um framework utilitário para estilização rápida e responsiva de componentes web sem sair do HTML.",
+    link: "https://tailwindcss.com/",
+  },
+  {
+    id: 9,
     name: "Shadcn",
     title: "shadcn",
-    icon: "/skills-icon/shadcn.png",
+    icon: "/skills-icon/shadcn-ui.svg",
     description:
       "ShadCN UI é uma coleção de componentes prontos para React + Tailwind, focada em design consistente e acessibilidade.",
     link: "https://ui.shadcn.com/",
   },
   {
+    id: 10,
+    name: "React-hook-form",
+    title: "react-hook-form",
+    icon: "/skills-icon/reacthookform.svg",
+    description:
+      "React Hook Form facilita a criação e validação de formulários em React, usando hooks para controlar estado e erros.",
+    link: "https://react-hook-form.com/",
+  },
+  {
+    id: 11,
+    name: "Zod",
+    title: "zod",
+    icon: "/skills-icon/zod.svg",
+    description:
+      "Zod é uma biblioteca de validação e parsing de dados para TypeScript e JavaScript, permitindo definir schemas seguros.",
+    link: "https://zod.dev/",
+  },
+  // ── Backend ──
+  {
     id: 12,
     name: "Node",
     title: "node",
-    icon: "/skills-icon/node.png",
+    icon: "/skills-icon/nodejs.svg",
     description:
       "Node.js permite executar JavaScript no servidor, criando aplicações back-end escaláveis e de alto desempenho.",
     link: "https://nodejs.org/",
@@ -111,64 +113,74 @@ export const listOfTechnologies = [
     id: 13,
     name: "Nest",
     title: "nest",
-    icon: "/skills-icon/nest.png",
+    icon: "/skills-icon/nestjs.svg",
     description:
       "NestJS é um framework back-end baseado em Node.js e TypeScript, estruturado por módulos e inspirado em Angular.",
     link: "https://nestjs.com/",
   },
   {
     id: 14,
+    name: "Go",
+    title: "go",
+    icon: "/skills-icon/go.svg",
+    description:
+      "Go é uma linguagem de programação compilada, concorrente e eficiente, desenvolvida pelo Google para sistemas escaláveis.",
+    link: "https://go.dev/",
+  },
+  {
+    id: 15,
     name: "Prisma",
     title: "prisma",
-    icon: "/skills-icon/prisma.png",
+    icon: "/skills-icon/prisma.svg",
     description:
       "Prisma é um ORM moderno para Node.js e TypeScript, que facilita consultas ao banco de dados e tipagem segura.",
     link: "https://www.prisma.io/",
   },
   {
-    id: 15,
-    name: "Postgress",
-    title: "postgress",
-    icon: "/skills-icon/postgress.png",
+    id: 16,
+    name: "PostgreSQL",
+    title: "postgresql",
+    icon: "/skills-icon/postgresql.svg",
     description:
       "PostgreSQL é um sistema de gerenciamento de banco de dados relacional poderoso, confiável e de código aberto.",
     link: "https://www.postgresql.org/",
   },
+  // ── Ferramentas ──
   {
-    id: 16,
+    id: 17,
     name: "Docker",
     title: "docker",
-    icon: "/skills-icon/docker.png",
+    icon: "/skills-icon/docker.svg",
     description:
       "Docker é uma plataforma para criar, gerenciar e distribuir containers, garantindo que aplicações rodem de forma consistente.",
     link: "https://www.docker.com/",
   },
   {
-    id: 17,
-    name: "Figma",
-    title: "figma",
-    icon: "/skills-icon/figma.png",
+    id: 18,
+    name: "Git",
+    title: "git",
+    icon: "/skills-icon/git.svg",
     description:
-      "Figma é uma ferramenta de design e prototipagem colaborativa baseada na nuvem, ideal para UI/UX design.",
-    link: "https://www.figma.com/",
+      "Git é um sistema de controle de versão distribuído, usado para gerenciar alterações em projetos de software.",
+    link: "https://git-scm.com/",
   },
   {
-    id: 18,
+    id: 19,
     name: "Jest",
     title: "jest",
-    icon: "/skills-icon/jest.png",
+    icon: "/skills-icon/jest.svg",
     description:
       "Jest é uma biblioteca de testes em JavaScript/TypeScript, utilizada para garantir qualidade e confiabilidade do código.",
     link: "https://jestjs.io/",
   },
   {
-    id: 19,
-    name: "Git",
-    title: "git",
-    icon: "/skills-icon/git.png",
+    id: 20,
+    name: "Figma",
+    title: "figma",
+    icon: "/skills-icon/figma.svg",
     description:
-      "Git é um sistema de controle de versão distribuído, usado para gerenciar alterações em projetos de software.",
-    link: "https://git-scm.com/",
+      "Figma é uma ferramenta de design e prototipagem colaborativa baseada na nuvem, ideal para UI/UX design.",
+    link: "https://www.figma.com/",
   },
 ];
 

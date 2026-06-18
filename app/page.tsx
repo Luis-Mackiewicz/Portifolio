@@ -1,40 +1,43 @@
-"use client";
-
 import Header from "@/components/header";
 import MyselfImage from "@/public/luis-miguel.svg";
 import Image from "next/image";
-import { useEffect } from "react";
 import Button from "../components/button";
-import { technologyCards, websiteCards } from "../components/card";
+import { TechnologyGrid, WebsiteGrid } from "../components/card";
 import { Video } from "../components/video";
+import { ConsoleArt } from "../components/console-art";
+
+const socialLinks = [
+  {
+    href: "https://github.com/luis-miguel-mackiewicz",
+    src: "/icons/github.svg",
+    alt: "GitHub",
+  },
+  {
+    href: "https://linkedin.com/in/luis-miguel-mackiewicz",
+    src: "/icons/linkedin.svg",
+    alt: "LinkedIn",
+  },
+  {
+    href: "https://instagram.com/luis.dev_",
+    src: "/icons/instagram.svg",
+    alt: "Instagram",
+  },
+  {
+    href: "https://wa.me/5544991384873",
+    src: "/icons/whatsapp.svg",
+    alt: "WhatsApp",
+  },
+];
 export default function Home() {
-  const consoleText = `
-  ██╗     ██╗   ██╗██╗███████╗    ███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███████╗██╗    ██╗██╗ ██████╗███████╗
-  ██║     ██║   ██║██║██╔════╝    ████╗ ████║██╔══██╗██╔════╝██║ ██╔╝██║██╔════╝██║    ██║██║██╔════╝╚══███╔╝
-  ██║     ██║   ██║██║███████╗    ██╔████╔██║███████║██║     █████╔╝ ██║█████╗  ██║ █╗ ██║██║██║       ███╔╝
-  ██║     ██║   ██║██║╚════██║    ██║╚██╔╝██║██╔══██║██║     ██╔═██╗ ██║██╔══╝  ██║███╗██║██║██║      ███╔╝
-  ███████╗╚██████╔╝██║███████║    ██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██╗██║███████╗╚███╔███╔╝██║╚██████╗███████╗
-  ╚══════╝ ╚═════╝ ╚═╝╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝ ╚═════╝╚══════╝
-  `;
-
-  useEffect(() => {
-    console.log(
-      `%c${consoleText}`,
-      `
-      color: #666BDE;
-    `,
-    );
-  }, []);
-
   return (
+    <>
+      <ConsoleArt />
     <div>
       <Header />
       <div
         className="
-      h-dvh 
-      overflow-y-scroll 
-      snap-y 
-      snap-mandatory"
+      h-dvh
+      overflow-y-scroll"
       >
         <section
           id="inicio"
@@ -48,7 +51,7 @@ export default function Home() {
     justify-center
     bg-linear-to-r from-gray-700 via-gray-900 to-black
     overflow-hidden
-    snap-start
+    scroll-mt-14
   "
         >
           <Video />
@@ -98,95 +101,102 @@ export default function Home() {
 
         <section
           id="sobre"
-          className="w-full 
-          h-dvh 
-          flex 
-          justify-center 
+          className="w-full
+          min-h-dvh
+          flex
+          justify-center
           items-center
-         text-indigo-50
+          text-indigo-50
           bg-linear-to-r
-         from-gray-700
-         via-gray-900
-         to-black
-          snap-start"
+          from-gray-700
+          via-gray-900
+          to-black
+          scroll-mt-14"
         >
           <div
             className="
-          grid 
+          grid
           grid-cols-1
-          gap-y-4 
-          md:w-4/5 
+          gap-y-6
+          gap-x-12
+          w-full
+          px-6
+          pt-16
+          pb-10
+          md:w-4/5
           lg:grid-cols-2
-          mt-12          
           "
+        >
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          justify-center
+          lg:col-span-2"
           >
-            <div
+            <h2
               className="
-            flex 
-            items-center 
-            justify-center 
-            lg:col-span-2"
+            font-jet
+            font-bold
+            text-lg
+            md:text-3xl
+            "
             >
-              <h2
-                className="
-              font-jet 
-              font-bold 
-              text-lg 
-              md:text-3xl"
-              >
-                Sobre
-              </h2>
-            </div>
+              Sobre
+            </h2>
+           
+          </div>
 
             <div
               className="
-            flex 
-            items-center 
-            justify-center"
+            flex
+            items-center
+            justify-center
+            relative"
             >
+              <div className="absolute -inset-4 bg-indigo-500/10 rounded-4xl blur-2xl" />
               <Image
                 src={MyselfImage}
                 alt="Imagem de Luis Miguel tocando violão"
                 className="
-                w-1/5
-                rounded-4xl 
-                object-cover 
-                grayscale 
-                hover:grayscale-0 
-                transition 
+                relative
+                w-3/5
+                rounded-4xl
+                object-cover
+                grayscale
+                hover:grayscale-0
+                transition-all
                 duration-500
-                lg:w-96
-                cursor-target
+                ring-2 ring-indigo-500/20
+                shadow-2xl shadow-indigo-500/10
+                sm:w-2/5
+                lg:w-72
                 "
               />
             </div>
             <div
               className="
-            flex 
-            flex-col 
-            items-center 
-            justify-center 
+            flex
+            flex-col
+            justify-center
             text-sm
-            pl-4 
-            pr-4 
-            space-y-2 
-            md:text-lg 
-            md:pl-0 
-            md:pr-0
-            md
+            space-y-4
+            md:text-lg
             "
             >
               <p>
-                Meu nome é Luis Miguel Mackiewicz , desenvolvedor fullstack
-                TypeScript, com experiência complementar em design e marketing
-                digital.
+                Meu nome é Luis Miguel Mackiewicz, desenvolvedor{" "}
+                <span className="text-indigo-400 font-semibold">fullstack TypeScript</span>,
+                com experiência complementar em design e marketing digital.
               </p>
 
               <p>
                 Iniciei minha jornada na tecnologia em 2024, ao ingressar no
-                curso de Análise e Desenvolvimento de Sistemas, e no mesmo ano
-                conquistei meu primeiro estágio, onde embarquei no
-                desenvolvimento de software.
+                curso de{" "}
+                <span className="text-indigo-400 font-semibold">Análise e Desenvolvimento de Sistemas</span>,
+                e no mesmo ano conquistei meu primeiro estágio, onde embarquei
+                no desenvolvimento de software.
               </p>
 
               <p>
@@ -197,16 +207,17 @@ export default function Home() {
               </p>
 
               <p>
-                Atualmente atuo como desenvolvedor freelancer , ajudando
-                empresas e profissionais a irem além de apenas “ter um site”.
-                Meu foco é construir páginas estratégicas, pensadas para atrair
-                clientes, aumentar vendas e fortalecer marcas.
+                Atualmente atuo como desenvolvedor{" "}
+                <span className="text-indigo-400 font-semibold">freelancer</span>,
+                ajudando empresas e profissionais a irem além de apenas "ter um
+                site". Meu foco é construir páginas estratégicas, pensadas para
+                atrair clientes, aumentar vendas e fortalecer marcas.
               </p>
             </div>
           </div>
         </section>
         <section
-          id="portifolio"
+          id="portfolio"
           className="
           w-full
           h-dvh
@@ -219,23 +230,24 @@ export default function Home() {
          from-gray-700
          via-gray-900
          to-black
-          snap-start"
+          scroll-mt-14"
         >
-          <div className="h-11/12 w-4/5 mt-12 flex flex-col gap-y-16 justify-center items-center">
+          <div className="flex-1 w-full flex flex-col gap-8 justify-center items-center px-6">
             <div className="w-full flex items-center justify-center">
               <h2
                 className="
-           text-indigo-50 
-           font-jet font-bold 
+           text-indigo-50
+           font-jet font-bold
            text-lg
-
            md:text-3xl"
               >
-                Portifólio
+                Portfólio
               </h2>
             </div>
 
-            {websiteCards}
+            <div className="w-full max-w-sm">
+              <WebsiteGrid />
+            </div>
           </div>
         </section>
         <section
@@ -252,7 +264,7 @@ export default function Home() {
          from-gray-700
          via-gray-900
          to-black
-          snap-start"
+          scroll-mt-14"
         >
           <h2
             className="
@@ -267,29 +279,34 @@ export default function Home() {
           </h2>
           <div
             className="
-          grid 
-          grid-cols-3
-          gap-4
-          p-4
-          auto-rows-fr 
-          bg-gray-950 
-          rounded-3xl 
+          grid
+          grid-cols-2
+          gap-2
+          p-3
+          bg-gray-950
+          rounded-3xl
           border
-           border-indigo-500/10 
+           border-indigo-500/10
            shadow-2xl
+           w-full
+           max-h-[calc(100dvh-12rem)]
+           overflow-y-auto
+           sm:grid-cols-3
+           sm:p-4
+           sm:gap-3
            md:grid-cols-4
            lg:grid-cols-5
            md:h-3/4
            md:w-4/5
            "
           >
-            {technologyCards}
+            <TechnologyGrid />
           </div>
         </section>
         <section
           id="contato"
           className="
-          not-even:w-full 
+          w-full 
           h-dvh 
           flex 
           flex-col 
@@ -298,7 +315,7 @@ export default function Home() {
            from-gray-700 
            via-gray-900
             to-black 
-            snap-start"
+            scroll-mt-14"
         >
           <div
             className="
@@ -325,23 +342,48 @@ export default function Home() {
             >
               Vamos transformar sua ideia<br></br> em realidade!
             </h2>
-            <Button className="w-">whatsapp</Button>
+            <Button>whatsapp</Button>
           </div>
 
           <footer
             className="
-          relative 
-          z-10 
-          mb-8 
-          text-zinc-500 
-          text-xs 
-          tracking-widest 
+          relative
+          z-10
+          mb-8
+          flex
+          flex-col
+          items-center
+          gap-4
+          text-zinc-500
+          text-xs
+          tracking-widest
           uppercase"
           >
+            <div className="flex items-center gap-4">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.alt}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.alt}
+                  className="opacity-60 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <Image
+                    src={link.src}
+                    alt={link.alt}
+                    width={24}
+                    height={24}
+                    className="object-contain"
+                  />
+                </a>
+              ))}
+            </div>
             © 2026 Luis Miguel Mackiewicz. All rights reserved.
           </footer>
         </section>
       </div>
     </div>
+    </>
   );
 }

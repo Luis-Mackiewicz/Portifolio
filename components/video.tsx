@@ -2,7 +2,6 @@
 import MobileImage from "@/public/home-mobile-image.jpg";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { div } from "three/src/nodes/math/OperatorNode.js";
 
 export function Video() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -16,11 +15,12 @@ export function Video() {
 
   if (!isDesktop) {
     return (
-      <div>
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
         <Image
           src={MobileImage}
           alt="Programing image"
-          className="w-auto h-auto rounded-4xl "
+          fill
+          className="object-cover opacity-60"
         />
       </div>
     );
@@ -48,6 +48,7 @@ export function Video() {
       opacity-60
     "
     >
+      <source src="/coding-video.webm" type="video/webm" />
       <source src="/coding-video.mp4" type="video/mp4" />
     </video>
   );

@@ -23,8 +23,9 @@ export default function Button({ children, className }: ButtonProps) {
      text-indigo-50
       border
      border-purple-500/30
-      p-2
-      w-1/3
+       p-3
+      w-1/2
+      sm:w-1/3
       rounded-2xl
      font-jet
      font-semibold
