@@ -105,7 +105,7 @@ export default function Modal({
             hover:text-indigo-50
             transition-colors
             duration-200
-            cursor-pointer cursor-target
+             cursor-target
           "
         >
           ×
@@ -158,7 +158,7 @@ export default function Modal({
                 text-sm
                 transition-colors
                 duration-200
-                cursor-pointer cursor-target
+                cursor-target
               "
             >
               Ir ao site →

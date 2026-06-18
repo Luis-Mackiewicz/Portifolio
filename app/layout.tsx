@@ -47,6 +47,7 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       className={` ${inter.variable} ${jetBrains.variable} antialiased`}
+      data-cursor="none"
     >
       <body className="font-inter" cz-shortcut-listen="true">
         <TargetCursor />

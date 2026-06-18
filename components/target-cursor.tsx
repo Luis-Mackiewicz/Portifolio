@@ -32,7 +32,6 @@ const getContainingBlockOffset = (block: HTMLElement | null): { x: number; y: nu
 export interface TargetCursorProps {
   targetSelector?: string;
   spinDuration?: number;
-  hideDefaultCursor?: boolean;
   hoverDuration?: number;
   parallaxOn?: boolean;
 }
@@ -40,7 +39,6 @@ export interface TargetCursorProps {
 export default function TargetCursor({
   targetSelector = ".cursor-target",
   spinDuration = 2,
-  hideDefaultCursor = true,
   hoverDuration = 0.2,
   parallaxOn = true,
 }: TargetCursorProps) {
@@ -75,11 +73,6 @@ export default function TargetCursor({
 
   useEffect(() => {
     if (isMobile || !cursorRef.current) return;
-
-    const originalCursor = document.body.style.cursor;
-    if (hideDefaultCursor) {
-      document.body.style.cursor = "none";
-    }
 
     const cursor = cursorRef.current;
     cornersRef.current = cursor.querySelectorAll<HTMLDivElement>(".target-cursor-corner");
@@ -299,12 +292,11 @@ export default function TargetCursor({
         cleanupTarget(activeTarget);
       }
       spinTl.current?.kill();
-      document.body.style.cursor = originalCursor;
       isActiveRef.current = false;
       targetCornerPositionsRef.current = null;
       activeStrengthRef.current.current = 0;
     };
-  }, [targetSelector, spinDuration, moveCursor, constants, hideDefaultCursor, isMobile, hoverDuration, parallaxOn]);
+  }, [targetSelector, spinDuration, moveCursor, constants, isMobile, hoverDuration, parallaxOn]);
 
   useEffect(() => {
     if (isMobile || !cursorRef.current || !spinTl.current) return;

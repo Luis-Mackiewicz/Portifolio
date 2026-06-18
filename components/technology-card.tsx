@@ -66,7 +66,7 @@ function TechCard({
           hover:bg-gray-800
           hover:border-indigo-500/30
           hover:-translate-y-0.5
-          cursor-pointer cursor-target
+          cursor-target
         "
       >
         {icon && (

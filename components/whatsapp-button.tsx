@@ -33,7 +33,6 @@ export default function Button({ children, className }: ButtonProps) {
       transition-all
       duration-500
       cursor-target
-      cursor-pointer
     ${className}
         `}
     >

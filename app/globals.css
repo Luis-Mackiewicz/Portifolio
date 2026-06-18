@@ -8,3 +8,7 @@
 * {
   scrollbar-width: thin;
 }
+
+html[data-cursor="none"], html[data-cursor="none"] body, html[data-cursor="none"] body * {
+  cursor: none !important;
+}
