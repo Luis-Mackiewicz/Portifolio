@@ -2,9 +2,9 @@ import Image from "next/image";
 import Button from "@/components/whatsapp-button";
 
 const socialLinks = [
-  { href: "https://github.com/luis-miguel-mackiewicz", src: "/icons/github.svg", alt: "GitHub" },
-  { href: "https://linkedin.com/in/luis-miguel-mackiewicz", src: "/icons/linkedin.svg", alt: "LinkedIn" },
-  { href: "https://instagram.com/luis.dev_", src: "/icons/instagram.svg", alt: "Instagram" },
+  { href: "https://github.com/Luis-Mackiewicz", src: "/icons/github.svg", alt: "GitHub" },
+  { href: "https://www.linkedin.com/in/luis-mackiewicz", src: "/icons/linkedin.svg", alt: "LinkedIn" },
+  { href: "https://www.instagram.com/luismiguel.dev", src: "/icons/instagram.svg", alt: "Instagram" },
   { href: "https://wa.me/5544991384873", src: "/icons/whatsapp.svg", alt: "WhatsApp" },
 ];
 
