@@ -52,7 +52,7 @@ export default function Header() {
         <Link
           href="#inicio"
           onClick={closeMenu}
-          className="text-indigo-50 font-jet font-bold text-lg tracking-tight hover:opacity-80 transition"
+          className="text-indigo-50 font-jet font-bold text-lg tracking-tight hover:opacity-80 transition cursor-target"
         >
           Luis Mackiewicz
         </Link>
@@ -62,7 +62,7 @@ export default function Header() {
             <li key={href}>
               <Link
                 href={href}
-                className={`text-sm font-jet font-semibold transition ${
+                className={`text-sm font-jet font-semibold transition cursor-target ${
                   activeSection === href.slice(1)
                     ? "text-indigo-400"
                     : "text-indigo-50/70 hover:text-indigo-50"
@@ -75,7 +75,7 @@ export default function Header() {
         </ul>
 
         <button
-          className="md:hidden text-indigo-50 p-2 hover:opacity-80 transition"
+          className="md:hidden text-indigo-50 p-2 hover:opacity-80 transition cursor-target"
           onClick={() => setIsMenuOpen((v) => !v)}
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMenuOpen}
@@ -99,7 +99,7 @@ export default function Header() {
                   <Link
                     href={href}
                     onClick={closeMenu}
-                    className={`block py-3 text-lg font-jet font-semibold transition ${
+                    className={`block py-3 text-lg font-jet font-semibold transition cursor-target ${
                       activeSection === href.slice(1)
                         ? "text-indigo-400"
                         : "text-indigo-50/70 hover:text-indigo-50"

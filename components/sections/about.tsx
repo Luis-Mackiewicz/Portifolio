@@ -22,7 +22,7 @@ export default function About() {
             alt="Imagem de Luis Miguel tocando violão"
             className="
               relative w-3/5 rounded-4xl object-cover grayscale hover:grayscale-0
-              transition-all duration-500 ring-2 ring-indigo-500/20
+              transition-all duration-500 ring-2 ring-indigo-500/20 cursor-target
               shadow-2xl shadow-indigo-500/10 sm:w-2/5 lg:w-72
             "
           />
