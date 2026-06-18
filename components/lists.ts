@@ -194,4 +194,13 @@ export const listOfWebsites = [
       "Site institucional do escritório Camargo Advocacia, desenvolvido com foco em usabilidade e design moderno.",
     link: "https://www.camargoadvocacia.com.br/",
   },
+  {
+    id: 2,
+    name: "Cantinho da Tia Nelci",
+    title: "Cantinho da Tia Nelci",
+    icon: "tianelci.svg",
+    description:
+      "Landing page de costura criativa com galeria de produtos, serviços e contato direto via WhatsApp.",
+    link: "https://tianelci.com.br/",
+  },
 ];
